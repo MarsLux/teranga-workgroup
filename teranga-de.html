@@ -1,0 +1,323 @@
+Ausgezeichnet! Da mache ich dir die Webseite direkt auf Deutsch. Die Struktur und das eingebettete CSS sind identisch mit den vorherigen Versionen.
+
+Hier ist die HTML-Datei, die du für dein GitHub-Repository verwenden kannst:
+
+HTML
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teranga - Das Haus der Ernährungs-Transition in Schifflingen, Luxemburg</title>
+    <style>
+        :root {
+            --primary-color: #4CAF50; /* A green color for transition/nature */
+            --secondary-color: #2196F3; /* A blue for contrast/water */
+            --text-color: #333;
+            --bg-color: #f8f8f8;
+            --light-bg: #fff;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+        }
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 0 20px;
+        }
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 20px 0;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        header p {
+            font-size: 1.2em;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            background-color: #388E3C; /* Darker primary color */
+            margin: 20px 0 0 0;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 15px 20px;
+            display: block;
+            transition: background-color 0.3s;
+        }
+        nav ul li a:hover {
+            background-color: var(--primary-color);
+        }
+        .hero {
+            background: var(--light-bg);
+            text-align: center;
+            padding: 60px 20px;
+            margin-bottom: 20px;
+            border-bottom: 3px solid var(--primary-color);
+        }
+        .hero h2 {
+            color: var(--primary-color);
+            font-size: 2em;
+        }
+        .section {
+            background-color: var(--light-bg);
+            padding: 40px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .section h2 {
+            text-align: center;
+            color: var(--secondary-color);
+            border-bottom: 2px solid var(--secondary-color);
+            padding-bottom: 10px;
+            margin-bottom: 30px;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .card {
+            padding: 20px;
+            background: var(--bg-color);
+            border-radius: 4px;
+            transition: transform 0.2s;
+            border-left: 5px solid var(--primary-color);
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        .card h3 {
+            color: var(--primary-color);
+            margin-top: 0;
+        }
+        .agenda-item {
+            border-bottom: 1px dashed #ccc;
+            padding-bottom: 15px;
+            margin-bottom: 15px;
+        }
+        .agenda-item strong {
+            display: block;
+            color: var(--secondary-color);
+            margin-bottom: 5px;
+        }
+        .contact-info, .supporters {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .supporters-list img, .supporters-list div {
+            height: 50px;
+            width: auto;
+            margin: 10px;
+            display: inline-block;
+            vertical-align: middle;
+        }
+        .logo-placeholder {
+            background-color: #ddd;
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            line-height: 150px;
+            font-size: 1.5em;
+            margin: 20px auto;
+            text-align: center;
+            color: var(--primary-color);
+            border: 2px dashed var(--primary-color);
+        }
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background-color: var(--primary-color);
+            color: white;
+            margin-top: 20px;
+        }
+        footer a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        .project-details {
+            margin-top: 30px;
+            border-top: 1px solid #eee;
+            padding-top: 20px;
+        }
+        .project-details h3 {
+            color: var(--secondary-color);
+        }
+        /* Mobile adjustments */
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+            }
+            nav ul li a {
+                text-align: center;
+            }
+            .grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <div class="logo-placeholder">🌱 TERANGA</div>
+            <h1 id="home">TERANGA</h1>
+            <p>Das Haus der Agrar- und Ernährungs-Transition in Schifflingen, Luxemburg</p>
+        </div>
+        <nav>
+            <ul class="container">
+                <li><a href="#home">Start</a></li>
+                <li><a href="#project">Das Projekt</a></li>
+                <li><a href="#activities">Aktivitäten</a></li>
+                <li><a href="#agenda">Agenda</a></li>
+                <li><a href="#contact">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="hero">
+            <img src="https://teranga.lu/wp-content/uploads/2023/07/teranga-main-image-placeholder.jpg" alt="Ein freundlicher Treffpunkt für die Agrar-Transition. (Die Bild-URL konnte nicht zuverlässig aus der Quelle extrahiert werden.)" style="max-width: 100%; height: auto; border-radius: 8px; margin-bottom: 20px; display: none;">
+            <h2>Ein Dritter Ort für eine nachhaltige Zukunft</h2>
+            <p>TERANGA ist ein Dritter Ort (Tiers-lieu), der sich der Agrar- und Ernährungs-Transition im Herzen von Schifflingen widmet. Seine Mission ist es, Begegnungen und Austausch zu diesem zentralen Thema zu fördern, um gemeinsam eine nachhaltige Zukunft aufzubauen.</p>
+        </section>
+
+        <section class="section" id="project">
+            <h2>Das Projekt</h2>
+            <p>
+                Angesichts der Mängel des globalen Ernährungssystems, das 828 Millionen Menschen hungern lässt, Millionen von Landwirten in extreme Armut stürzt und unseren Planeten erschöpft, erscheint der Übergang zu einem nachhaltigen Agrar- und Ernährungssystem als eine Notwendigkeit.
+            </p>
+            <p>
+                Wie können wir die 10 Milliarden Menschen ernähren, die bis 2050 auf der Erde leben werden, ohne die Natur weiter zu zerstören? Welche Ernährungsgewohnheiten sollen wir annehmen? Wie können wir als Verbraucher angesichts der Kaufkrafteinschränkungen die Kontrolle über unsere Ernährung zurückgewinnen? Wie können wir diejenigen unterstützen, die uns ernähren? Welche Rolle spielt die Politik?
+            </p>
+            <p>
+                TERANGA möchte konkrete Antworten auf diese Fragen geben und die Reflexion mit den Einwohnern von Schifflingen und Umgebung durch ein engagiertes Programm in einem angenehmen und freundlichen Rahmen vertiefen.
+            </p>
+
+            <div class="project-details">
+                <h3>Ein Ort für systemischen Wandel</h3>
+                <p>
+                    Unser Ernährungssystem, das zunehmend auf der Agro-Industrie basiert, ist für etwa 30% der Treibhausgasemissionen verantwortlich, und intensive Produktionsmethoden sind die Hauptursache für Entwaldung und den Verlust der Biodiversität weltweit.
+                </p>
+                <p>
+                    Der Weg zu einer nachhaltigeren Welt erfordert den Übergang zu **agro-ökologischen Praktiken** und einen systemischen, politischen und gesellschaftlichen Wandel. **Ernährung ist ein Menschenrecht**, und es liegt an der Gesellschaft, den politischen Rahmen zu beeinflussen, um gerechtere Gesetze für alle zu gewährleisten.
+                </p>
+
+                <h3>Gemeinschaft & Wohnen</h3>
+                <p>
+                    TERANGA beherbergt auch **acht Zimmer für junge Mieter (im Alter von 18 bis 26 Jahren)** mit geringem Einkommen, die eine erschwingliche Miete zahlen. Im Austausch für diese Unterkunft verpflichten sich die Bewohner, etwa **fünf Stunden pro Woche** für die Aktivitäten des Projekts aufzuwenden. Sie teilen eine gemeinsame Küche (die auch für Koch-Workshops genutzt wird) und ein Wohnzimmer (das für Projektionen und Treffen genutzt wird).
+                </p>
+            </div>
+        </section>
+
+        <section class="section" id="activities">
+            <h2>Was kannst du bei TERANGA machen?</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>Informieren und Diskutieren</h3>
+                    <p>Eine thematische Bibliothek und Ludothek für Groß und Klein sowie Treffen, um die Herausforderungen des Ernährungssystems besser zu verstehen.</p>
+                </div>
+                <div class="card">
+                    <h3>Lokale Produkte</h3>
+                    <p>Vor Ort genießen oder sich über einen Kommissionsverkauf von lokalen Produzenten, die Mitglieder der Karte der verantwortungsvollen Ernährung sind, versorgen.</p>
+                </div>
+                <div class="card">
+                    <h3>Mitmachen</h3>
+                    <p>Möchtest du helfen, dieses Projekt für deine Gemeinde aufzubauen? Ein paar Stunden deiner Zeit spenden? **Kontaktiere uns**, um mehr über Freiwilligenarbeit zu erfahren!</p>
+                </div>
+                <div class="card">
+                    <h3>Veranstaltungen</h3>
+                    <p>Ein vielfältiges und abwechslungsreiches Programm erwartet dich: Animationen, Workshops, Abendveranstaltungen, Film-Debatten, Konzerte, Ausstellungen und mehr.</p>
+                </div>
+                <div class="card">
+                    <h3>Ideen einbringen</h3>
+                    <p>Hast du eine Idee, ein Projekt oder einen Traum, den du an diesem Ort verwirklicht sehen möchtest? Nimm an unserer Bürgerumfrage teil und teile es uns mit!</p>
+                </div>
+                <div class="card">
+                    <h3>Entspannen</h3>
+                    <p>In einem freundlichen Raum, der für alle offen ist, ohne Konsum- oder Teilnahmepflicht an den Aktivitäten. Komm und nimm dir eine Auszeit.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="agenda">
+            <h2>Kommende Veranstaltungen</h2>
+            <p>Finde unsere neuesten Veranstaltungen und den detaillierten Zeitplan auf unseren Social-Media-Seiten (Facebook/Instagram).</p>
+
+            <div class="grid">
+                <div class="agenda-item card">
+                    <strong>Sauerkraut Workshop</strong>
+                    <p>Nimm an einem gemütlichen Nachmittag teil, der der Herstellung von Sauerkraut gewidmet ist.</p>
+                    <small>📍 TERANGA, Schifflingen | 🗓️ Sa, 29. Nov 2025 | 🕰️ 15:00 - 17:00 Uhr</small>
+                </div>
+                <div class="agenda-item card">
+                    <strong>Traditionelles Sauerteigbrotbacken</strong>
+                    <p>Ein Abend, der alten Getreidesorten und dem Sauerteigbrotbacken mit dem Experten François Kieffer gewidmet ist.</p>
+                    <small>📍 TERANGA, Schifflingen | 🗓️ Do, 20. Nov 2025 | 🕰️ 17:00 - 20:00 Uhr</small>
+                </div>
+                <div class="agenda-item card">
+                    <strong>Workshop Wildkräuter sammeln und Kochen</strong>
+                    <p>Ein inspirierender und schmackhafter Vormittag, um sich wieder mit der Natur zu verbinden und den Geist der Transition zu schmecken.</p>
+                    <small>📍 TERANGA, Schifflingen | 🗓️ Sa, 7. Jun 2025 | 🕰️ 9:30 - 14:00 Uhr</small>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="contact">
+            <h2>Kontakt & Besuche Uns</h2>
+            <div class="contact-info">
+                <p><strong>TERANGA - Das Haus der Ernährungs-Transition</strong></p>
+                <p>
+                    <a href="https://maps.app.goo.gl/YourMapLinkPlaceholder" target="_blank" style="color: var(--secondary-color);">35, Avenue de la Libération, 3850 Schifflingen</a>
+                </p>
+                <p><strong>Öffnungszeiten:</strong> Dienstag, Donnerstag und Samstag (10:00 Uhr - 18:00 Uhr)</p>
+                <p><strong>E-Mail:</strong> <a href="mailto:teranga@sosfaim.org">teranga@sosfaim.org</a></p>
+                <p><strong>Telefon:</strong> +352 49 09 96</p>
+            </div>
+
+            <div class="supporters">
+                <h3>Ein Projekt unterstützt von:</h3>
+                <p>
+                    TERANGA wird von **SOS Faim** getragen.
+                </p>
+                <div class="supporters-list">
+                    <div style="background-color: #eee; text-align: center; line-height: 50px;">Ministerium für auswärtige und europäische Angelegenheiten</div>
+                    <div style="background-color: #eee; text-align: center; line-height: 50px;">Nationales Hilfswerk</div>
+                    <div style="background-color: #eee; text-align: center; line-height: 50px;">André Losch Stiftung</div>
+                    <div style="background-color: #eee; text-align: center; line-height: 50px;">Gemeinde Schifflingen</div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© 2025 Teranga. Alle Rechte vorbehalten.</p>
+            <p>
+                <a href="#contact">Kontakt</a> | 
+                <a href="https://teranga.lu/politique-de-confidentialite/" target="_blank">Datenschutzrichtlinie (Original Quell-Link)</a> |
+                <a href="https://www.sosfaim.lu/" target="_blank">SOS Faim Luxemburg</a>
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
