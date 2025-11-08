@@ -1,83 +1,98 @@
 <!DOCTYPE html>
-
-<html lang="de">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Teranga - Sprachauswahl / Language Selection</title>
+    <title>TEMS 1.0 - Teranga Events Management System</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+        
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
+            font-family: 'Montserrat', sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
             display: flex;
             justify-content: center;
             align-items: center;
             min-height: 100vh;
-            margin: 0;
             text-align: center;
         }
+
         .container {
-            background-color: white;
+            background-color: #fff;
             padding: 40px 60px;
-            border-radius: 10px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            width: 90%;
+            animation: fadeIn 1s ease-out;
         }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
         h1 {
-            color: #4CAF50;
-            font-size: 2em;
-            margin-bottom: 5px;
+            color: #007bff; 
+            font-weight: 700;
+            font-size: 2.5em;
+            margin-bottom: 0.2em;
         }
-        p {
+
+        h2 {
             color: #555;
+            font-weight: 400;
+            font-size: 1.5em;
+            margin-top: 0;
             margin-bottom: 30px;
-            font-size: 1.1em;
         }
-        .language-list {
-            list-style: none;
-            padding: 0;
-        }
-        .language-list li {
-            margin-bottom: 15px;
-        }
-        .language-list a {
-            display: block;
-            padding: 12px 25px;
-            background-color: #2196F3; /* Secondary blue color */
+
+        .cta-button {
+            display: inline-block;
+            background-color: #28a745; 
             color: white;
+            padding: 15px 30px;
             text-decoration: none;
-            border-radius: 5px;
-            font-weight: bold;
-            transition: background-color 0.3s, transform 0.2s;
+            border-radius: 8px;
+            font-size: 1.2em;
+            font-weight: 700;
+            transition: background-color 0.3s ease, transform 0.2s;
         }
-        .language-list a:hover {
-            background-color: #0d7fe3;
-            transform: translateY(-2px);
+
+        .cta-button:hover {
+            background-color: #218838;
+            transform: scale(1.05);
         }
-        .footer-note {
+
+        p.version {
             margin-top: 30px;
+            color: #999;
             font-size: 0.9em;
-            color: #888;
         }
     </style>
 </head>
 <body>
-
     <div class="container">
-        <h1>TERANGA</h1>
-        <p>Bitte wähle deine Sprache / Please choose your language:</p>
-
-        <ul class="language-list">
-            <li><a href="teranga-de.html">Deutsch 🇩🇪</a></li>
-            <li><a href="teranga-lu.html">Lëtzebuergesch 🇱🇺</a></li>
-            <li><a href="teranga-en.html">English 🇬🇧</a></li>
-            <li><a href="teranga-zh.html">中文 (Chinesisch) 🇨🇳</a></li>
-        </ul>
+        <h1>TEMS 1.0</h1>
+        <h2>Teranga Events Management System</h2>
         
-        <div class="footer-note">
-            Ein Projekt von SOS Faim. | A project by SOS Faim.
-        </div>
+        <p>
+            The central tool for coordinating, documenting, and tracking all initiatives, tasks, and projects within the Teranga Workgroup.
+        </p>
+
+        <a 
+            href="https://docs.google.com/spreadsheets/d/1JkMN-vyHS3b4pwCbBcTanQBrYu3MoAg-LimwQjqE6ak/edit?gid=640373628#gid=640373628" 
+            target="_blank" 
+            class="cta-button">
+            Go to TEMS Master Sheet
+        </a>
+
+        <p class="version">
+            Version 1.0 | Administrative access required
+        </p>
     </div>
-
 </body>
-
 </html>
