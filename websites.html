@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teranga - Sprachauswahl / Language Selection</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            text-align: center;
+        }
+        .container {
+            background-color: white;
+            padding: 40px 60px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #4CAF50;
+            font-size: 2em;
+            margin-bottom: 5px;
+        }
+        p {
+            color: #555;
+            margin-bottom: 30px;
+            font-size: 1.1em;
+        }
+        .language-list {
+            list-style: none;
+            padding: 0;
+        }
+        .language-list li {
+            margin-bottom: 15px;
+        }
+        .language-list a {
+            display: block;
+            padding: 12px 25px;
+            background-color: #2196F3; /* Secondary blue color */
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+        .language-list a:hover {
+            background-color: #0d7fe3;
+            transform: translateY(-2px);
+        }
+        .footer-note {
+            margin-top: 30px;
+            font-size: 0.9em;
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>TERANGA</h1>
+        <p>Bitte wähle deine Sprache / Please choose your language:</p>
+
+        <ul class="language-list">
+            <li><a href="teranga-de.html">Deutsch 🇩🇪</a></li>
+            <li><a href="teranga-lu.html">Lëtzebuergesch 🇱🇺</a></li>
+            <li><a href="teranga-en.html">English 🇬🇧</a></li>
+            <li><a href="teranga-zh.html">中文 (Chinesisch) 🇨🇳</a></li>
+        </ul>
+        
+        <div class="footer-note">
+            Ein Projekt von SOS Faim. | A project by SOS Faim.
+        </div>
+    </div>
+
+</body>
+</html>
